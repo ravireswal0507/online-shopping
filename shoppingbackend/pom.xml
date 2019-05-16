@@ -27,8 +27,23 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
 
   <build>
+  <plugins>
+	
+	<!--UPDATE TO LATEST VERSION OF JAVA  -->
+	<plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version><!--$NO-MVN-MAN-VER$-->
+          <configuration>
+          
+          <source>1.8</source>
+          <target>1.8</target>
+          </configuration>
+    </plugin>
+	</plugins>
+	
     <finalName>shoppingbackend</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
